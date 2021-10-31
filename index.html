@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <title>Todo App</title>
+  </head>
+  <body>
+      <div id="main">
+        <h1 id="clock">00:00:00</h1>
+        <div id="weather">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="login_container">
+            <h2>Log-in</h2>
+            <div>
+                <h4>ID</h4>
+                <input id="login_id" type="text" placeholder="Name">
+            </div>
+            <div>
+                <h4>Password</h4>
+                <input id="login_pw"  type="password" placeholder="Password">
+            </div>
+            <div class="login_option">
+                <button id="login_btn" value="Log in">Log in</button>
+                <span id="register_btn" value="Register">Register</span>
+            </div>
+            
+        </div>
+        <div id="register" class="hidden">
+            <h2>Sign-up</h2>
+            <div>
+                <h4>ID</h4>
+                <input id="register_id" type="text" placeholder="Name">
+            </div>
+            <div>
+                <h4>Password</h4>
+                <input id="register_pw" type="password" placeholder="Password">
+            </div>
+            <div class="register_option">
+                <button id="confirm_btn" value="Register">Confirm</button>
+                <button id="cancel_btn" value="Cancel">Cancel</button>
+            </div>
+        </div>
+        <div id="todo_container" class="hidden">
+            <h1 id="greeting">
+            </h1>
+            <form id="todo-form">
+                <input id="todo-input" type="text" placeholder="Write a To Do and Press Enter" required />
+            </form>
+            <ul id="todo-list"></ul>
+            <button id="logout_btn" value="Log in">Log out</button>
+        </div>
+        
+      </div>
+    <script src="js/clock.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>

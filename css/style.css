@@ -1,0 +1,163 @@
+.bgImg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock {
+    font-size: 70px;
+    margin:20px;
+    color:orange;
+}
+#todo_container {
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    border-radius: 5px;
+    background:lightblue;
+}
+
+#todo-input {
+    width:300px;
+    height:20px;
+    width: 100%;
+}
+
+#login_container,#register {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding:20px;
+    border-radius: 10px;
+    width:20%;
+    margin-top: 20px;
+    height: 350px;
+    width: 300px;
+    justify-content: space-around;
+}
+
+#login_container div {
+    margin-bottom: 10px;;
+}
+h2 {
+    color: tomato;
+    font-size: 2em;
+    margin:10px;
+}
+h4 {
+    margin: 5px 0;
+    font-size: 1em;
+}
+ul{
+    padding:0;
+}
+li {
+    list-style-type : none;
+    border-bottom: 1px solid white;
+    padding:10px 5px;
+}
+
+#greeting {
+    color: white;
+    align-self: center;
+}
+
+.hidden {
+    display:none !important;
+}
+
+input {
+    outline:none;
+}
+
+#todo-list {
+    color:white;
+    font-size: 20px;
+}
+.todo-text {
+    padding:0 15px;
+}
+
+#todo-input {
+    border: none; 
+    background: transparent;
+    color:white;
+    border-bottom: 1px solid white;
+    font-size: 20px;
+}
+#todo-input::placeholder {
+    color:white;
+}
+
+#login_id, #login_pw, #register_id, #register_pw {
+    height: 30px;
+    border-radius: 30px;
+    padding: 0px 20px;
+    border: 1px solid lightgray;
+    outline: none;
+}
+
+#login_btn, #logout_btn {
+    width: 60%;
+    height: 40px;
+    border: 0;
+    outline: none;
+    border-radius: 40px;
+    background: linear-gradient(to left, rgb(255, 77, 46), rgb(255, 155, 47));
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: 2px; 
+}
+#logout_btn {
+    align-self: center;
+}
+
+#confirm_btn, #cancel_btn {
+    border: 0;
+    background: linear-gradient(to left, rgb(255, 77, 46), rgb(255, 155, 47));
+    border-radius: 10px;
+    font-size: 1em;
+    letter-spacing: 2px; 
+    color: white;
+    height: 30px;
+    width: 40%;
+    margin: 0 5px;
+}
+
+#register_btn {
+    align-self:center;
+    color:lightslategray;
+    font-size:1em;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.login_option{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.register_option {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
