@@ -47,15 +47,21 @@
                 <button id="cancel_btn" value="Cancel">Cancel</button>
             </div>
         </div>
-        <div id="todo_container" class="hidden">
-            <h1 id="greeting">
-            </h1>
-            <form id="todo-form">
-                <input id="todo-input" type="text" placeholder="Write a To Do and Press Enter" required />
-            </form>
-            <ul id="todo-list"></ul>
-            <button id="logout_btn" value="Log in">Log out</button>
+        <div id="logged-in-container" class="hidden">
+            <img class="waffle-img" src="./images/waffle.png" alt="">
+            <div id="todo_container">
+                <h1 id="greeting">
+                </h1>
+                <form id="todo-form">
+                    <input id="todo-input" type="text" placeholder="Write a To Do and Press Enter" required />
+                </form>
+                <ul id="todo-list"></ul>
+                <!-- <button id="logout_btn" value="Log in">Log out</button> -->
+                <span id="logout-text">Log out</span>
+                <span class="tri"></span>
+            </div>
         </div>
+        
         
       </div>
     <script src="js/clock.js"></script>
