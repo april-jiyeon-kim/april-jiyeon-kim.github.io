@@ -21,13 +21,13 @@ function paintToDo(newTodo) {
   const li = document.createElement("li");
   li.id = newTodo.id;
   const checkboxIcon = document.createElement("i")
-  checkboxIcon.setAttribute("class","far fa-square")
+  checkboxIcon.setAttribute("class","far fa-square clickable")
   checkboxIcon.addEventListener("click", toggleTodo);
   const todo = document.createElement("span");
   todo.setAttribute("class","todo-text")
   todo.innerText = newTodo.text;
   const deleteBtn = document.createElement("i");
-  deleteBtn.setAttribute("class","far fa-trash-alt")
+  deleteBtn.setAttribute("class","far fa-trash-alt clickable")
   deleteBtn.addEventListener("click", deleteToDo);
   li.appendChild(checkboxIcon);
   li.appendChild(todo);
@@ -37,9 +37,9 @@ function paintToDo(newTodo) {
 
 function toggleTodo(e) {
   if(e.target.classList.contains("fa-check-square")){
-    e.target.setAttribute("class","far fa-square")
+    e.target.setAttribute("class","far fa-square clickable")
   }else{
-    e.target.setAttribute("class","far fa-check-square")
+    e.target.setAttribute("class","far fa-check-square clickable")
   }
 }
 

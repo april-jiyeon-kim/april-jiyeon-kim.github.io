@@ -17,6 +17,7 @@ const weatherPanel = document.querySelector("#weather");
 const clockPanel = document.querySelector("#clock");
 
 function checkValue(){
+    console.log("checkvalue")
     const ID = loginId.value;
     const PASSWORD = loginPw.value; 
     if(localStorage.getItem(ID) == PASSWORD) {
@@ -84,7 +85,11 @@ logoutBtn.addEventListener("click", logOut)
 registerBtn.addEventListener("click", register)
 confirmBtn.addEventListener("click", confrimRegister)
 cancelBtn.addEventListener("click", cancelRegister)
-loginPw.addEventListener("submit", handleToDoSubmit);
+loginPw.addEventListener("keypress", function(e){
+    if(e.key === 'Enter'){
+        checkValue()
+    }
+});
 
 const loggedIn = localStorage.getItem("loggedIn");
 

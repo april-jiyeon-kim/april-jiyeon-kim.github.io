@@ -27,7 +27,7 @@
 
 .logged-in-clock-weather {
     position: relative;
-    top:220px;
+    top:255px;
 }
 #logged-in-containe {
     margin-top:50px;
@@ -44,7 +44,7 @@
     background:white;
     margin-top: 40px;
     position: relative;
-    top: -350px;
+    top: -290px;
 }
 
 
@@ -194,4 +194,7 @@ input {
     position: relative;
     top: -10px;
     right: -15px;
+  }
+  .clickable {
+      cursor: pointer;
   }
