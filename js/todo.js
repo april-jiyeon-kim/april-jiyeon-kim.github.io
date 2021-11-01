@@ -27,7 +27,7 @@ function paintToDo(newTodo) {
   todo.setAttribute("class","todo-text")
   todo.innerText = newTodo.text;
   const deleteBtn = document.createElement("i");
-  deleteBtn.setAttribute("class","far fa-trash-alt clickable")
+  deleteBtn.setAttribute("class","fas fa-minus-circle clickable")
   deleteBtn.addEventListener("click", deleteToDo);
   li.appendChild(checkboxIcon);
   li.appendChild(todo);
